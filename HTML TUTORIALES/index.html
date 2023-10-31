@@ -1,0 +1,155 @@
+<!DOCTYPE html> <!-- indica que tipo de documento es en el navegador -->
+ <!-- etiqueta raiz de todo html -->
+<head> <!-- se pueden agregar caracteristicas que no va a ver el cliente -->
+    <title>Mi primera web</title> <!-- nombre de la pagina -->
+
+    <style>
+        table , th,td{ 
+            border: 1px solid black;
+           
+        }
+    </style><!-- sirve para darle estilo a la tabla -->
+</head>
+<body><!-- aqui va todo el cuerpo de la pagina -->
+  <!-- el contenido aqui debe estar bien identado debe ser 4 espacios o un tab -->
+  
+
+  <table style="width: 500px;"> <!-- como darle estilo a la tabla -->
+  <thead>
+      <tr> <!-- sirve para crear una fila -->
+        <th>Producto</th> <!-- sirve para crear una columna -->
+        <th>Precio</th>    <!-- th crea las cabeceras de las tablas -->
+    </tr>
+  </thead> <!--sirve para darle estilo a la cabecera de la tabla -->
+   <tbody>
+     <tr>
+           <td>Hola beats</td>
+           <td>Gratis</td>
+         
+        </tr>
+        <tr>
+            <td> chanchito feliz</td>
+            <td>19,90</td>
+          
+         </tr>
+         <tr>
+            <td> chanchito feliz muy feliz</td>
+            <td>29,90</td>
+          
+         </tr>
+   </tbody><!-- sirve para poner el cuerpo de la tabla -->
+   
+      <tfoot>
+        <td></td>
+        <td>Total:49.80$</td>
+      </tfoot> 
+  </table>
+
+
+
+
+  <!-- listas -->
+  <ul> <!-- sirve para crear listas -->
+    <li >Elemento 1</li> <!-- listas no ordenadas -->
+    <li>Elemento 2</li> <!-- para poner un elemento predeterminado es con value -->
+    <li>Elemento 3</li>
+    <li>Elemento 4</li>
+  </ul> 
+
+  <ol>  <!-- listas ordenadas -->
+    <li  value="50">Elemento 1</li><!-- para poner un elemento predeterminado es con value -->
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+    <li>Elemento 4</li>
+    <li>
+        <ol> <!-- lista anidada -->
+            <li style="list-style-type: lower-alpha;">subelemento 1</li> <!-- para darle un estilo se usa list-style -->
+            <li style="list-style-type: lower-alpha;">subelemento 2</li>
+            <li style="list-style-type: lower-alpha;">subelemento 3</li>
+        </ol>
+    </li>
+    </ol>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <form action="/formulario" method="Post"><!-- aqui se le debe de poner una accion al form junto a una ruta a la cual se van a enviar los datos del formulario, junto al metodo post o get  -->  
+    <label  for="Nombre">Nombre</label> <!-- etiqueta label sirve para poner identificadores a los espacios de escritura -->
+    <input type="text" id="Nombre" placeholder="Escribe tu nombre"> <!-- etiqueta input sirve para crear espacios de escritura -->
+   <!-- hay tipo de types como lo son el text ,email,el radio, el password, el checkbox -->
+<!-- propiedad de placeholder sirve para indicar algo dentro del espacio vacio antes de escribir -->
+<!-- propiedad de tipo type  sirve para crear un buton o algo de texto tiene como forma predeterminada el text -->
+<input value="Nombre" type="file" id="Nombre" placeholder="Escribe tu nombre"> <!-- etiqueta input sirve para crear espacios de escritura -->
+<!-- Los values sirven para tener datos por defecto en un input -->
+<!-- sirve para escoger un archivo dela pc para subir algo --> 
+ <br> <!-- sirve para dar un salto de linea  --> 
+
+  <label  for="Apellido">Apellido</label> <!-- etiqueta label sirve para poner identificadores a los espacios de escritura -->
+  <input  value="ppp" id="Apellido" placeholder="Escribe tu nombre"> <!-- etiqueta input sirve para crear espacios de escritura -->
+<br>
+<label for="comentario">Comentario</label>
+<textarea cols="50" rows="10" placeholder="ingrese un comentario" name="comentario">Este en un valor por defecto</textarea> <!-- sirve para crear un espacio de escritura mas grande -->
+<!-- En un text area no sirve la aplicacion de value para poner valores por defecto -->
+<!-- cols = colunmas y rows = espacios hacia abajo -->
+<br>
+<!--<input type="submit"> sirve para crear un boton -->
+
+<!-- botones  permite agregar mas etiquetas dentro de otra etiqueta -->
+<button type="button">Enviar</button>
+<button type="reset">Enviar</button>
+<button type="submit">Enviar</button> <!-- sirve para crear un boton -->
+<!-- submit, button,reset -->
+</form>
+ <!-- etiqueta form sirve para crear tablas o campos de textos -->
+    <h1>mi primer heading</h1>   
+    <h2>mi segundo heading</h2> <!-- sirve para indicar cabeceras o subcabeceras  -->
+    <h3>mi tercer heading</h3>
+    <h4>mi cuarto heading</h4>
+    <h5>mi quinto heading</h5>
+    <h6>chanchito feliz</h6>
+   <!-- el h6 es el ultimo heading  -->
+
+   <!-- etiqueta p sirve para poner parrafos -->
+   <p>chanchito feliz esta muy feliz</p>
+    <p>chanchito triste esta muy triste</p>
+    <hr> <!-- sirve para poner una linea horizontal es decir separar texto -->
+    <h2>chanchito felipe</h2>   
+    <p>este texto es <span style="color: blue;">mucho mas largo </span>
+        y es para mostrar <br> <!-- sirve para dar un salto de linea  -->
+         la etiqueta de spam</p>
+    <!-- etiqueta comentario -->
+    <!-- etiqueta spam  sirve para referir algo de un texto dentro de otro texto -->
+    <!-- etiqueta a sirve para poner links de otras paginas -->
+    <a target="_blank" href="https://www.google.co.cr">Ir a goggle</a>
+    <!-- la etiqueta target sirve para mostrar una pagina nueva de gogle -->
+<!-- sirve para poner imagenes  -->
+ <img src="images/cofee.jpg" alt="imagen de cafe" height="400"> <!-- propiedad de css --> <!--sirve para poner el tamaño de la imagen -->
+
+
+
+</body>
+</html>
